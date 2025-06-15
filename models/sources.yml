@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw
+    database: celestial-shore-462313-u3
+    schema: raw
+    tables:
+      - name: raw_freelancer_invoices
+      - name: raw_freelancer_info
+      
