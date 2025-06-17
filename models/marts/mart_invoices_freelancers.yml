@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: mart_invoices_freelancers
+    description: "This table contains information about all invoices and their associated freelancers"
+    columns:
+      - name: invoice_id
+        tests:
+          - not_null
+          - unique
+      - name: payment_status
+        tests:
+          - accepted_values:
+              values:
+                - "Paid"
+                - "Pending"
